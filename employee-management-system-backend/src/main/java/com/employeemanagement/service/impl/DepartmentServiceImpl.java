@@ -64,4 +64,16 @@ public class DepartmentServiceImpl implements DepartmentService {
 
         departmentRepository.deleteById(id);
     }
+
+	@Override
+	public DepartmentDto getDepartmentById(Long id) {
+		Department department = departmentRepository.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundException("Department not found"));
+
+		DepartmentDto dto = new DepartmentDto();
+		dto.setId(department.getId());
+		dto.setName(department.getName());
+
+		return dto;
+	}
 }

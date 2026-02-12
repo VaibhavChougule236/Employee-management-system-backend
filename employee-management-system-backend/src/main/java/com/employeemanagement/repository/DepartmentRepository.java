@@ -6,5 +6,5 @@ import com.employeemanagement.entity.Department;
 
 public interface DepartmentRepository extends JpaRepository<Department, Long> {
 
-    boolean existsByName(String name);
+	boolean existsByName(String name);
 }
