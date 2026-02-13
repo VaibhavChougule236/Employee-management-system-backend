@@ -121,7 +121,7 @@ All APIs were tested using Postman.
 
 ## Postaman Collection
 
-
+https://github.com/VaibhavChougule236/Employee-management-system-backend/tree/main/postman/collections
 
 
 
