@@ -28,6 +28,7 @@ application-dev.yml
 
 .env
 *.env
+.postman
 
 .mvn/wrapper/maven-wrapper.jar
 

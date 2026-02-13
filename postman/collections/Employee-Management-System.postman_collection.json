@@ -1,0 +1,224 @@
+{
+  "info": {
+    "_postman_id": "b6801969-a3a6-448a-a10e-cb6d2dcb8eaa",
+    "name": "Employee-Management-System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "http://localhost:8089/api/employees",
+      "id": "8227f2a3-8b6d-4c4d-8d22-f91387e4d155",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstName\": \"Satish\",\r\n    \"lastName\":\"Kale\",\r\n    \"email\" : \"kalesatish123@gmail.com\",\r\n    \"departmentId\":1,\r\n    \"managerId\":1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8089/api/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "api",
+            "employees"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8089/api/departments",
+      "id": "9082edd4-b402-409f-899f-231651cb799a",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8089/api/departments",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "api",
+            "departments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8089/api/employees",
+      "id": "0086bb14-42e6-4b9d-bf3d-da960b70a5de",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstName\": \"Vaibhav\",\r\n    \"lastName\":\"Chougule\",\r\n    \"email\" : \"vaibhavchougule236@gmail.com\",\r\n    \"departmentId\":2,\r\n    \"managerId\":1\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8089/api/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "api",
+            "employees"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8089/api/employees/{id}",
+      "id": "793478fe-8ee1-417a-8e01-a5ffdce41abb",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8089/api/employees/{{id}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "api",
+            "employees",
+            "{{id}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8089/api/employees/{{id}}",
+      "id": "b3abfe8a-4e35-41be-a61c-547c9143b9c5",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstName\": \"Satish\",\r\n    \"lastName\":\"mane\",\r\n    \"email\" : \"manesatish1243@gmail.com\",\r\n    \"departmentId\":1,\r\n    \"managerId\":1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8089/api/employees/{{id}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "api",
+            "employees",
+            "{{id}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8089/api/employees/{{id}}",
+      "id": "d05606a0-e5e5-4aa4-ab15-c71436db7947",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8089/api/employees/{{id}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "api",
+            "employees",
+            "{{id}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8089/api/departments",
+      "id": "3de74237-59bf-4667-91f4-67911b905b05",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8089/api/departments",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "api",
+            "departments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8089/api/departments/{{id}}",
+      "id": "ef43c0cd-9200-4581-a234-5abedd4fa864",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8089/api/departments/{{id}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "api",
+            "departments",
+            "{{id}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

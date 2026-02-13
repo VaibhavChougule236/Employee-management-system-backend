@@ -28,7 +28,7 @@ public class EmployeeController {
 		return ResponseEntity.status(201).body(response);
 	}
 
-	//get all employees
+	//get all employees with department and manager name
 	@GetMapping
 	public ResponseEntity<List<EmployeeResponseDto>> getAllEmployees() {
 
