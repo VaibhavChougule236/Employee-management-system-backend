@@ -113,6 +113,18 @@ DELETE /api/departments/{id}
 
 ---
 
+## 📷 API Testing (Postman)
+
+All APIs were tested using Postman.
+
+<img width="1753" height="880" alt="image" src="https://github.com/user-attachments/assets/1d95766b-13ce-4110-91d6-ab9d274decc0" />
+
+## Postaman Collection
+
+https://github.com/VaibhavChougule236/Employee-management-system-backend/tree/main/postman/collections
+
+
+
 ## 📝 Middleware Implementation
 
 A global request–response logging middleware is implemented using:
